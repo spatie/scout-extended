@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace Algolia\ScoutExtended\Settings;
 
 use Algolia\AlgoliaSearch\SearchIndex;
-use Algolia\ScoutExtended\Repositories\LocalSettingsRepository;
+use Algolia\ScoutExtended\Contracts\LocalSettingsRepositoryContract;
 use Algolia\ScoutExtended\Repositories\UserDataRepository;
 use Illuminate\Support\Str;
 use LogicException;
@@ -64,7 +64,7 @@ final class Status
     /**
      * Status constructor.
      *
-     * @param \Algolia\ScoutExtended\Repositories\LocalSettingsRepository $localRepository
+     * @param \Algolia\ScoutExtended\Contracts\LocalSettingsRepositoryContract $localRepository
      * @param \Algolia\ScoutExtended\Settings\Encrypter $encrypter
      * @param \Algolia\ScoutExtended\Settings\Settings $remoteSettings
      * @param \Algolia\AlgoliaSearch\SearchIndex $index
@@ -72,7 +72,7 @@ final class Status
      * @return void
      */
     public function __construct(
-        LocalSettingsRepository $localRepository,
+        LocalSettingsRepositoryContract $localRepository,
         UserDataRepository $userDataRepository,
         Encrypter $encrypter,
         Settings $remoteSettings,
