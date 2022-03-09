@@ -1,3 +1,6 @@
+
+[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
+
 <p align="center">
   <a href="https://www.algolia.com">
     <img alt="Scout Extended" src="https://raw.githubusercontent.com/algolia/scout-extended/master/docs/banner.png" >
